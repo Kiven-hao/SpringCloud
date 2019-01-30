@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zkml-cloud-api" />
+        <module name="zkml-cloud-consumer" />
+        <module name="zkml-cloud-eureka" />
+        <module name="zkml-cloud-eureka-02" />
+        <module name="zkml-cloud-eureka-03" />
+        <module name="zkml-cloud-feign" />
+        <module name="zkml-cloud-provider" />
+        <module name="zkml-cloud-provider-02" />
+        <module name="zkml-cloud-provider-03" />
+        <module name="zkml-cloud-provider-hystrix" />
+        <module name="zkml-cloud-provider-hystrixDashboard" />
+        <module name="zkml-cloud-zuul" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

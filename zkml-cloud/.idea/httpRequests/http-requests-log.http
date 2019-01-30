@@ -1,0 +1,16 @@
+POST http://localhost:8001/dept/add
+
+<> 2019-01-30T092717.400.json
+
+###
+
+GET http://localhost:8001/dept/get/{id}
+
+###
+
+POST http://localhost:8001/dept/add
+
+<> 2019-01-30T084346.400.json
+
+###
+
