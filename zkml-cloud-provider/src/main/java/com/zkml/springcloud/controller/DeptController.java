@@ -3,6 +3,8 @@ package com.zkml.springcloud.controller;
 import com.zkml.springcloud.pojo.Dept;
 import com.zkml.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,5 +32,20 @@ public class DeptController {
     @GetMapping(value="/dept/list")
     public List<Dept> list()  {
         return service.list();
+    }
+
+    @Autowired
+    private DiscoveryClient discoveryClient;
+
+    @GetMapping("/provider/discovery")
+    public Object discovery() {
+        //查询所有微服务的名称
+        List<String> list = discoveryClient.getServices();
+        System.out.println(list);
+        List<ServiceInstance> insList = discoveryClient.getInstances("zkml-cloud-provider");
+        for (ServiceInstance si:insList) {
+            System.out.println(si.getHost() +"," + si.getServiceId() +"," +si.getPort() +"," +si.getUri() +"," +si.getMetadata());
+        }
+        return this.discoveryClient;
     }
 }
