@@ -1,0 +1,72 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Windows template
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+.gitignore
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/springcloud.iml
+.idea/vcs.xml
+zkml-cloud-api/src/main/resources/
+zkml-cloud-api/src/test/
+zkml-cloud-api/target/generated-sources/
+zkml-cloud-api/zkml-cloud-api.iml
+zkml-cloud-consumer/src/main/java/com/zkml/springcloud/mapper/
+zkml-cloud-consumer/src/main/java/com/zkml/springcloud/service/
+zkml-cloud-consumer/src/test/
+zkml-cloud-consumer/zkml-cloud-consumer.iml
+zkml-cloud-eureka-02/src/test/
+zkml-cloud-eureka-02/target/generated-sources/
+zkml-cloud-eureka-02/zkml-cloud-eureka-02.iml
+zkml-cloud-eureka-03/src/test/
+zkml-cloud-eureka-03/target/generated-sources/
+zkml-cloud-eureka-03/zkml-cloud-eureka-03.iml
+zkml-cloud-eureka/META-INF/
+zkml-cloud-eureka/src/test/
+zkml-cloud-eureka/target/generated-sources/
+zkml-cloud-eureka/zkml-cloud-eureka.iml
+zkml-cloud-feign/src/test/
+zkml-cloud-feign/zkml-cloud-feign.iml
+zkml-cloud-provider-02/src/test/
+zkml-cloud-provider-02/zkml-cloud-provider-02.iml
+zkml-cloud-provider-03/src/test/
+zkml-cloud-provider-03/zkml-cloud-provider-03.iml
+zkml-cloud-provider-hystrix/src/test/
+zkml-cloud-provider-hystrix/zkml-cloud-provider-hystrix.iml
+zkml-cloud-provider-hystrixDashboard/src/test/
+zkml-cloud-provider-hystrixDashboard/zkml-cloud-provider-hystrixDashboard.iml
+zkml-cloud-provider/src/test/
+zkml-cloud-provider/target/generated-sources/
+zkml-cloud-provider/zkml-cloud-provider.iml
+zkml-cloud-zuul/src/test/
+zkml-cloud-zuul/zkml-cloud-zuul.iml
+zkml-cloud/.idea/artifacts/
+zkml-cloud/.idea/vcs.xml
+zkml-cloud/out/
+zkml-cloud/zkml-cloud.iml
