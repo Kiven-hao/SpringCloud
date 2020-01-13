@@ -1,5 +1,6 @@
 package com.zkml.springcloud.controller;
 
+import com.netflix.discovery.DiscoveryManager;
 import com.zkml.springcloud.pojo.Dept;
 import com.zkml.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,5 +48,14 @@ public class DeptController {
             System.out.println(si.getHost() +"," + si.getServiceId() +"," +si.getPort() +"," +si.getUri() +"," +si.getMetadata());
         }
         return this.discoveryClient;
+    }
+
+
+    /**
+     * 客户端主动下线方法
+     */
+    @RequestMapping(value = "/offline", method = RequestMethod.GET)
+    public void offLine(){
+        DiscoveryManager.getInstance().shutdownComponent();
     }
 }
